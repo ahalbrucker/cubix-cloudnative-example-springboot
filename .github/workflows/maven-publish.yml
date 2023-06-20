@@ -26,7 +26,7 @@ jobs:
         server-id: github # Value of the distributionManagement/repository/id field of the pom.xml
         cache: 'maven'
     - name: Check java version 
-      run: java - version
+      run: java -version
     - name: Build with Maven
       run: mvn -B verify --file pom.xml
 
